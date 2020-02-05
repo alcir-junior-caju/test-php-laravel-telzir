@@ -1,0 +1,96 @@
+.font-title {
+    font-family: 'Limelight', cursive;
+    font-size: 3rem;
+}
+
+.front {
+    width: 100wh;
+    height: 90vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+    .font-title {
+        text-decoration: none;
+        font-size: 5rem;
+        color: #fff;
+        span {
+            font-family: Nunito Sans;
+            font-size: 1rem;
+            line-height: 0;
+            margin-left: -3.5rem;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .front {
+        padding: 0 !important;
+        .font-title {
+            font-size: 4rem;
+            span {
+                margin-left: -1rem;
+            }
+        }
+        h1 {
+            font-size: 2.5rem !important;
+            line-height: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem !important;
+            line-height: 1.5rem;
+        }
+        h4 {
+            margin: 0;
+        }
+    }
+    .font-title {
+        font-size: 1rem;
+    }
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        a {
+            color: #fff;
+        }
+    }
+    .separator {
+        display: none;
+    }
+}
